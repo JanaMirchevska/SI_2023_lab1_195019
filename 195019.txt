@@ -1,0 +1,245 @@
+4. 
+C:\Users\janam>mkdir SI_2023_lab1_195019
+C:\Users\janam>cd SI_2023_lab1_195019
+C:\Users\janam\SI_2023_lab1_195019>git init
+Initialized empty Git repository in C:/Users/janam/SI_2023_lab1_195019/.git/
+
+5.
+C:\Users\janam\SI_2023_lab1_195019>git remote add origin https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+
+6.
+C:\Users\janam\SI_2023_lab1_195019>git add README.md
+
+C:\Users\janam\SI_2023_lab1_195019>git commit -m "Initial commit"
+[master (root-commit) f0d3774] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+7.
+C:\Users\janam\SI_2023_lab1_195019>git add SILab1.java
+
+C:\Users\janam\SI_2023_lab1_195019>git commit -m "Add java class"
+[master 91a13ee] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+8.
+C:\Users\janam\SI_2023_lab1_195019>git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 828 bytes | 276.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+9.
+C:\Users\janam\SI_2023_lab1_195019>git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout -b bug1 master
+Switched to a new branch 'bug1'
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout -b bug2 master
+Switched to a new branch 'bug2'
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout -b bug3 master
+Switched to a new branch 'bug3'
+
+10.
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug1
+Switched to branch 'bug1'
+
+11.
+C:\Users\janam\SI_2023_lab1_195019>git add SILab1.java
+
+C:\Users\janam\SI_2023_lab1_195019>git commit -m "Fix wrong loop for reading"
+[bug1 488ce51] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12.
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug2
+Switched to branch 'bug2'
+
+13.
+C:\Users\janam\SI_2023_lab1_195019>git add SILab1.java
+
+C:\Users\janam\SI_2023_lab1_195019>git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 6e40457] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14. 
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug3
+Switched to branch 'bug3'
+
+15.
+C:\Users\janam\SI_2023_lab1_195019>git add SILab1.java
+
+C:\Users\janam\SI_2023_lab1_195019>git commit -m "Fix method sumEvenNumbers"
+[bug3 d397b43] Fix method sumEvenNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+16.
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\janam\SI_2023_lab1_195019>git push origin bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/JanaMirchevska/SI_2023_lab1_195019/pull/new/bug1
+remote:
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+ * [new branch]      bug1 -> bug1
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\janam\SI_2023_lab1_195019>git push origin bug2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 171.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/JanaMirchevska/SI_2023_lab1_195019/pull/new/bug2
+remote:
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+ * [new branch]      bug2 -> bug2
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\janam\SI_2023_lab1_195019>git push origin bug3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 167.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/JanaMirchevska/SI_2023_lab1_195019/pull/new/bug3
+remote:
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+ * [new branch]      bug3 -> bug3
+
+17.
+C:\Users\janam\SI_2023_lab1_195019>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+18.
+C:\Users\janam\SI_2023_lab1_195019>git merge bug1
+Updating 91a13ee..488ce51
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+19.
+C:\Users\janam\SI_2023_lab1_195019>git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+   91a13ee..488ce51  master -> master
+branch 'master' set up to track 'origin/master'.
+
+20.
+C:\Users\janam\SI_2023_lab1_195019>git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21.
+C:\Users\janam\SI_2023_lab1_195019>git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+   488ce51..e278807  master -> master
+branch 'master' set up to track 'origin/master'.
+
+22.
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug3
+Switched to branch 'bug3'
+
+23.
+C:\Users\janam\SI_2023_lab1_195019>git rebase master bug3
+Successfully rebased and updated refs/heads/bug3.
+
+24.
+C:\Users\janam\SI_2023_lab1_195019>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+25.
+C:\Users\janam\SI_2023_lab1_195019>git merge bug3
+Updating e278807..7823720
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+26.
+C:\Users\janam\SI_2023_lab1_195019>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 112.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+   e278807..7823720  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\janam\SI_2023_lab1_195019>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\janam\SI_2023_lab1_195019>git push --force origin bug3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JanaMirchevska/SI_2023_lab1_195019.git
+ + d397b43...7823720 bug3 -> bug3 (forced update)
+
+27.
+git log
+git add logs.txt
+git add index.txt
+git commit -m "Final commit"
+
+28.
+git push -u origin
+git push -u origin master
+git log
+
+
+
+
+
+
+
+

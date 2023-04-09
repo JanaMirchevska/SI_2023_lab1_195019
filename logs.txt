@@ -1,0 +1,38 @@
+C:\Users\janam\SI_2023_lab1_195019>git log
+commit 7823720bc2e4bb428b2a9be0f263e8ecd6deb89a (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Jana <jana.mirchevska@gmail.com>
+Date:   Sun Apr 9 17:30:39 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit e2788075528abeb6f75b811b6caa064f66ea79bf
+Merge: 488ce51 6e40457
+Author: Jana <jana.mirchevska@gmail.com>
+Date:   Sun Apr 9 17:58:57 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 6e404574073db4fd1bd2253376ce074a39f0d4f5 (origin/bug2, bug2)
+Author: Jana <jana.mirchevska@gmail.com>
+Date:   Sun Apr 9 17:25:22 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 488ce51572d9f04789172ffa0f68f8ad020d1bd3 (origin/bug1, bug1)
+Author: Jana <jana.mirchevska@gmail.com>
+Date:   Sun Apr 9 17:20:59 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 91a13eef509d25d43714275a6608b1d428e77e5b
+Author: Jana <jana.mirchevska@gmail.com>
+Date:   Sun Apr 9 16:49:02 2023 +0200
+
+    Add java class
+
+commit f0d377490b6b335d7db0d1006f325227a13a3167
+Author: Jana <jana.mirchevska@gmail.com>
+Date:   Sun Apr 9 16:35:55 2023 +0200
+
+    Initial commit
+(END)
